@@ -1,0 +1,32 @@
+services:
+  mongo:
+    image: mongo:6
+    container_name: rentify-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  server:
+    build: ./server
+    container_name: rentify-server
+    restart: always
+    ports:
+      - "4050:4050"
+    env_file:
+      - ./server/.env
+    depends_on:
+      - mongo
+
+  client:
+    build: ./client
+    container_name: rentify-client
+    restart: always
+    ports:
+      - "5173:5173"
+    depends_on:
+      - server
+
+volumes:
+  mongo_data:

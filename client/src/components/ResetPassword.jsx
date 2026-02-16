@@ -19,7 +19,7 @@ const ResetPassword = () => {
     e.preventDefault();
     setMessage("");
     setIsError(false);
- 
+
     if (password !== confirmPassword) {
       setIsError(true);
       setMessage("Passwords do not match.");
