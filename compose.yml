@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   mongo:
     image: mongo:6
@@ -7,6 +9,11 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD-SHELL", "mongosh --quiet --eval 'db.adminCommand(\"ping\")' || exit 1"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
 
   server:
     build: ./server
@@ -25,6 +32,15 @@ services:
     restart: always
     ports:
       - "5173:5173"
+    depends_on:
+      - server
+
+  admin:
+    build: ./admin/client
+    container_name: rentify-admin
+    restart: always
+    ports:
+      - "5174:5174"
     depends_on:
       - server
 
