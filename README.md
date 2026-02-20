@@ -1,9 +1,9 @@
-🏠 Rentify – Rental Management Application
+# 🏠 Rentify – Rental Management Application
 
 Rentify is a full-stack MERN rental management application that allows admins to manage rentals and tenants, while tenants can view their assigned rental information. Admins can register themselves and create tenant accounts, assign rentals, and manage all data. Tenants can only log in once their account is created by an admin.
 
-📌 Features
-🏢 Admin Panel
+# 📌 Features
+# 🏢 Admin Panel
 
 📝 Admin self-registration & login
 
@@ -15,7 +15,7 @@ Rentify is a full-stack MERN rental management application that allows admins to
 
 📄 Manage rental details
 
-🗝 Client Panel (Tenant)
+# 🗝 Client Panel (Tenant)
 
 🔑 Tenant login (only after admin creation)
 
@@ -23,7 +23,7 @@ Rentify is a full-stack MERN rental management application that allows admins to
 
 📊 Access rental history and details
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 🗄 MongoDB – Database
 
@@ -35,7 +35,7 @@ Rentify is a full-stack MERN rental management application that allows admins to
 
 🐳 Docker & Docker Compose – Containerization
 
-🔐 Authentication
+# 🔐 Authentication
 
 📝 Admin self-registration & login
 
@@ -43,7 +43,7 @@ Rentify is a full-stack MERN rental management application that allows admins to
 
 🛡 JWT-based secure authentication
 
-🔧 Environment Variables
+# 🔧 Environment Variables
 
 Create a .env file in your server/ directory:
 
@@ -87,7 +87,7 @@ This will start the following services:
 
 🏢 Admin panel (5174)
 
-🖥 Ports
+# 🖥 Ports
 
 🏢 Admin Panel: http://localhost:5174
 
@@ -97,34 +97,34 @@ This will start the following services:
 
 🗄 MongoDB: 27017
 
-📁 Project Structure
+# 📁 Project Structure
 rentify/
 ├─ server/       # Backend API
 ├─ client/       # Tenant panel (React)
 ├─ admin/        # Admin panel (React)
 ├─ docker-compose.yml
 └─ README.md
-🔗 API Endpoints
+# 🔗 API Endpoints
 🏢 Admin Authentication
 
 POST /api/auth/admin/register – Admin registration
 
 POST /api/auth/admin/login – Admin login
 
-👤 Tenant Management (Admin only)
+# 👤 Tenant Management (Admin only)
 
 POST /api/tenants – Create tenant
 
 GET /api/tenants/:id – Fetch tenant details
 
-🗂 Rental Management
+# 🗂 Rental Management
 
 POST /api/rentals – Admin assigns rental
 
 GET /api/rentals/:tenantId – Tenant fetches rental data
 
-⚙️ User Roles
-🏢 Admin
+# ⚙️ User Roles
+# 🏢 Admin
 
 📝 Can self-register
 
@@ -132,7 +132,7 @@ GET /api/rentals/:tenantId – Tenant fetches rental data
 
 🗂 Manage rental and tenant data
 
-🗝 Tenant
+# 🗝 Tenant
 
 🔑 Cannot self-register
 
@@ -150,10 +150,4 @@ GET /api/rentals/:tenantId – Tenant fetches rental data
 
 📝 Contributing
 
-Fork the repository
-
-Create a branch: git checkout -b feature/xyz
-
-Make your changes & commit
-
-Push branch & open a pull request
+# 

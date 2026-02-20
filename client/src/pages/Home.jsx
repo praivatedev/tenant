@@ -56,7 +56,7 @@ const TenantDashboard = () => {
       </div>
     );
 
-  if (error)
+  if (error && !token)
     return (
       <div className="flex flex-col items-center justify-center h-[70vh] text-center text-gray-500 px-6">
         <LogIn size={60} className="mb-4 text-blue-500" />
