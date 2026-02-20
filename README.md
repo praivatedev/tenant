@@ -107,47 +107,45 @@ rentify/
 # 🔗 API Endpoints
 🏢 Admin Authentication
 
-POST /api/auth/admin/register – Admin registration
+- POST /api/auth/admin/register – Admin registration
 
-POST /api/auth/admin/login – Admin login
+- POST /api/auth/admin/login – Admin login
 
 # 👤 Tenant Management (Admin only)
 
-POST /api/tenants – Create tenant
+- POST /api/tenants – Create tenant
 
-GET /api/tenants/:id – Fetch tenant details
+- GET /api/tenants/:id – Fetch tenant details
 
 # 🗂 Rental Management
 
-POST /api/rentals – Admin assigns rental
+- POST /api/rentals – Admin assigns rental
 
-GET /api/rentals/:tenantId – Tenant fetches rental data
+- GET /api/rentals/:tenantId – Tenant fetches rental data
 
 # ⚙️ User Roles
 # 🏢 Admin
 
-📝 Can self-register
+- 📝 Can self-register
 
-👤 Create tenants & assign rentals
+- 👤 Create tenants & assign rentals
 
-🗂 Manage rental and tenant data
+- 🗂 Manage rental and tenant data
 
 # 🗝 Tenant
 
-🔑 Cannot self-register
+- 🔑 Cannot self-register
 
-🔑 Login only after account creation by admin
+- 🔑 Login only after account creation by admin
 
-📃 View assigned rental info
+- 📃 View assigned rental info
 
-📈 Future Improvements
+- 📈 Future Improvements
 
-✉️ Email notifications for new tenants
+- ✉️ Email notifications for new tenants
 
-💰 Payment & rent tracking
+- 💰 Payment & rent tracking
 
-📊 Analytics dashboards for admins
+- 📊 Analytics dashboards for admins
 
-📝 Contributing
-
-# 
+- 📝 Contributing
