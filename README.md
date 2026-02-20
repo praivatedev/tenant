@@ -57,7 +57,7 @@ VITE_API_URL=http://localhost:4050
 
 ⚠️ Do NOT commit .env files to GitHub
 
-📦 Running the App with Docker
+# 📦 Running the App with Docker
 
 The project is fully containerized using Docker Compose.
 
@@ -67,7 +67,7 @@ Requirements
 
 🐙 Docker Compose
 
-Check versions:
+# Check versions:
 
 docker --version
 docker-compose --version
@@ -79,13 +79,13 @@ docker-compose up --build
 
 This will start the following services:
 
-🗄 MongoDB
+- 🗄 MongoDB
 
-⚡ Backend server (4050)
+- ⚡ Backend server (4050)
 
-🖥 Client panel (5173)
+- 🖥 Client panel (5173)
 
-🏢 Admin panel (5174)
+- 🏢 Admin panel (5174)
 
 # 🖥 Ports
 
